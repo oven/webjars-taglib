@@ -60,4 +60,63 @@ Useful e.g. for require.js. Default is false.</description>
 		</attribute>
 	</tag>
 
+	<tag>
+		<name>script</name>
+		<tag-class>org.webjars.taglib.ScriptTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<description>
+				Restrict search to a particular webjar. Useful when resources have the same name
+				in several webjars.
+			</description>
+			<name>webjar</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>The path we're looking for, e.g. 'bootstrap.js'.</description>
+			<name>path</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>link</name>
+		<tag-class>org.webjars.taglib.LinkTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<description>
+				Restrict search to a particular webjar. Useful when resources have the same name
+				in several webjars.
+			</description>
+			<name>webjar</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>The path we're looking for, e.g. 'bootstrap.js'.</description>
+			<name>path</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>Link type. Defaults to rel="stylesheet".</description>
+			<name>rel</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>Content type. Defaults to type="text/css".</description>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>Media type, e.g., "screen" or "print". Not included by default.</description>
+			<name>media</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
 </taglib>

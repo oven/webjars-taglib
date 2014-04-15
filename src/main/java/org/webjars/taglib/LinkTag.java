@@ -23,7 +23,7 @@ public class LinkTag extends SimpleTag {
 
     @Override
     public void doTagInternal() throws JspException, IOException {
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         sb.append("<link ");
         sb.append(String.format("rel='%s' ", rel));
         if (null != media) sb.append(String.format("media='%s' ", media));

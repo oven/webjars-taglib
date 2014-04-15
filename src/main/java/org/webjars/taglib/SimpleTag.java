@@ -51,7 +51,7 @@ public abstract class SimpleTag extends SimpleTagSupport {
 
 
     @Override
-    public void doTag() throws JspException, IOException {
+    public final void doTag() throws JspException, IOException {
         if (path == null) throw new JspException("Path must be set");
         doTagInternal();
     }

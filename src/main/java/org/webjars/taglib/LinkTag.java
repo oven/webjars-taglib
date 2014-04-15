@@ -28,7 +28,7 @@ public class LinkTag extends SimpleTag {
         sb.append(String.format("rel='%s' ", rel));
         if (null != media) sb.append(String.format("media='%s' ", media));
         sb.append(String.format("type='%s' ", type));
-        sb.append(String.format("href='%s/%s'/>", getContextPath(), getPath()));
+        sb.append(String.format("href='%s/%s'/>", getContextPath(), getFullPath()));
         out().print(sb.toString());
     }
 

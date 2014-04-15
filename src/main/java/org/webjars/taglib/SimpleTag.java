@@ -28,7 +28,7 @@ public abstract class SimpleTag extends SimpleTagSupport {
         return request.getContextPath();
     }
 
-    protected String getPath() {
+    protected String getFullPath() {
         String result = null == webjar ? locator.getFullPath(path) : locator.getFullPath(webjar, path);
         result = result.substring("META-INF/resources/".length());
         return result;

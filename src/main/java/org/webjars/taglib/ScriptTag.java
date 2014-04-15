@@ -18,6 +18,6 @@ import java.io.IOException;
 public class ScriptTag extends SimpleTag {
     @Override
     public void doTagInternal() throws JspException, IOException {
-        out().print(String.format("<script src='%s/%s'></script>", getContextPath(), getPath()));
+        out().print(String.format("<script src='%s/%s'></script>", getContextPath(), getFullPath()));
     }
 }
